@@ -1,11 +1,18 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿
 
 namespace appContacto.ViewModels
 {
+    using appContacto.Models;
+    using System.Collections.Generic;
     public class MainViewmodel
     {
+        #region Properties
+        public List<Contact> ContactList { get; set; }
+
+        #region ViewModel
+        public ContactViewmodel ContactViewModel { get; set; }
+        #endregion
+
         #region Constructor
         public MainViewmodel()
         {
