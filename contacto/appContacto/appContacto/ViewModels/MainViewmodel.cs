@@ -10,15 +10,17 @@ namespace appContacto.ViewModels
         public List<Contact> ContactList { get; set; }
 
         #region ViewModel
-        public ContactViewmodel ContactViewModel { get; set; }
+        public ContactViewmodel contactViewModel { get; set; }
         #endregion
 
         #region Constructor
         public MainViewmodel()
         {
             instance = this;
+            this.contactViewModel = new ContactViewmodel();
         } 
         #endregion
+
         #region singleton
         private static MainViewmodel instance;
 
@@ -32,5 +34,5 @@ namespace appContacto.ViewModels
         }
         #endregion
     }
-
+    #endregion
 }
