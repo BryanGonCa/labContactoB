@@ -10,14 +10,14 @@ namespace appContacto.ViewModels
         public List<Contact> ContactList { get; set; }
 
         #region ViewModel
-        public ContactViewmodel contactViewModel { get; set; }
+        public ContactViewmodel contactViewmodel { get; set; }
         #endregion
 
         #region Constructor
         public MainViewmodel()
         {
             instance = this;
-            this.contactViewModel = new ContactViewmodel();
+            this.contactViewmodel = new ContactViewmodel();
         } 
         #endregion
 
